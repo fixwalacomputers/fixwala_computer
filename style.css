@@ -1,0 +1,408 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0, 123, 255, 0.75), rgba(0, 123, 255, 0.75)),
+    url("https://images.unsplash.com/photo-1581091215367-59ab6b7b59c7?auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #007bff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #0056b3;
+  color: white;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+/* Call Button */
+.call-btn {
+  background: #fdfcfc;
+  color: rgb(170, 18, 18);
+}
+
+.call-btn:hover {
+  background: #f1e9e9;
+}
+
+/* Services */
+.services {
+  background: #f8f9fa;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.service-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.service {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 25px;
+  /* *** FIXED *** */
+  width: 100%;
+  max-width: 250px;
+  transition: 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+/* About */
+.about {
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+  color: #333;
+}
+
+/* Contact */
+.contact {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 17px;
+}
+
+/* Footer */
+footer {
+  background: #0056b3;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.reviews {
+  background: #f8f9fa;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.reviews h2 {
+  font-size: 28px;
+  color: #007bff;
+}
+
+.subtitle {
+  color: #555;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.review-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin: 15px;
+  padding: 25px;
+  /* *** FIXED *** */
+  width: 100%;
+  max-width: 280px;
+  transition: 0.3s;
+}
+
+.review-box:hover {
+  transform: translateY(-5px);
+}
+
+.stars {
+  color: #ffb400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-box p {
+  font-style: italic;
+  color: #333;
+}
+
+.review-box h4 {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.review-btn {
+  background: #007bff;
+  color: white;
+  margin-top: 25px;
+}
+
+.review-btn:hover {
+  background: #0056b3;
+}
+
+.more-reviews {
+  display: none;
+}
+
+/* Optional: Smooth reveal for more reviews */
+:target.more-reviews {
+  display: block;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.whychoose {
+  background: #f0f4ff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.whychoose h2 {
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.whychoose .subtitle {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.why-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.why-box {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* *** FIXED *** */
+  width: 100%;
+  max-width: 260px;
+  padding: 25px;
+  transition: 0.3s ease;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+}
+
+.why-box h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.why-box p {
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ff5722;
+  font-size: 14px;
+}
+
+/* Floating Buttons */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.float-btn {
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: rgb(59, 5, 5);
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.whatsapp-float {
+  background: #25d366;
+}
+
+.whatsapp-float:hover {
+  background: #1ebe5d;
+}
+
+.call-float {
+  background: #fdfcfc;
+}
+
+.call-float:hover {
+  background: #e64a19;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+  .float-btn {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
+
+.card {
+  width: 100%;      /* full width of container on small screens */
+  max-width: 300px; /* original desktop width */
+  box-sizing: border-box; /* include padding in width */
+}
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  nav, .nav-buttons, .hero-buttons, footer div {
+    padding: 10px 15px;
+    margin: 0 auto;
+  }
+  /* --- ADD THIS NEW RULE --- */
+  nav ul {
+    display: none;
+  }
+  
+} /* <-- This was the end of your file (minus the stray '}') */
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Removed extra '}' from here */
